@@ -16,7 +16,7 @@ metadata:
   maturity: production
   estimated_completion_minutes: 60
   estimated_completion_delta: 30
-  tags: []
+#  tags: []
   authors:
     - Court Forms Online
   original_form: []
@@ -55,6 +55,7 @@ objects:
   - users: ALPeopleList.using(complete_attribute="complete",there_are_any=True)
   - the_courts: ALCourtLoader.using(filename="Courts.xlsx")
   - other_parties: ALPeopleList.using(there_are_any=True)
+  - al_logo: DAStaticFile.using(filename="MNfavicon-96x96.png", alt_text="LawHelpMN")
 ---
 generic object: ALIndividual
 template: x.person_type_label
